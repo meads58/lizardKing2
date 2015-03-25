@@ -1,0 +1,1 @@
+var lizardKingApp = angular.module('lizardKing', []);
