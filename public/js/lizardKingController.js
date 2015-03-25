@@ -17,8 +17,20 @@ lizardKingApp.controller('LizardKingController', function($scope){
   };
 
   $scope.getImage = function() {
-    $scope.newImageLeft =  $scope.image_bank[randomImage()];
-    $scope.newImageRight =  $scope.image_bank[randomImage()];
+    $scope.getLeftImage()
+    $scope.getRightImage()
+
+    if ($scope.newImageLeft == $scope.newImageRight){
+      $scope.getImage()
+    }
+  };
+
+  $scope.getLeftImage = function() {
+    $scope.newImageLeft = $scope.image_bank[randomImage()];
+  };
+
+   $scope.getRightImage = function() {
+    $scope.newImageRight = $scope.image_bank[randomImage()];
   };
 
   $scope.voteLeft = function() {
@@ -42,6 +54,3 @@ lizardKingApp.controller('LizardKingController', function($scope){
   $scope.getImage();
 
 });
-
-
-

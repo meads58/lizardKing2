@@ -17,9 +17,10 @@ describe('lizard King', function() {
       expect($('.images.right').isPresent()).toBe(true);
     });
 
-    it('should update the vote counter when submitting vote', function() {
-      element(by.className("button")).click();
-      expect()
+    xit('should update the vote counter when submitting vote', function() {
+      $('.button.left').click();
+
+      expect($('.counter.left')).toEqual(1);
     });
 
   });
@@ -29,6 +30,7 @@ describe('lizard King', function() {
     it('when left funnier? button is clicked', function(){
       var link = $('.images.left').getAttribute("src");
       $('.button.left').click();
+      waits(2000)
       expect(link).toNotEqual($('.images.left').getAttribute("src"))
     });
 

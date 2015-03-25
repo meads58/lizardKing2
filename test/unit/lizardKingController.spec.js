@@ -25,21 +25,30 @@ describe('LizardKingController', function() {
       scope.voteRight();
       expect(scope.countRight).toEqual(2);
      });
-
   });
 
   describe('when clicked', function(){
 
-    it('can choose a image', function(){
+    it('when clicked it selects a left image', function() {
       spyOn(Math, "random").and.returnValue(0);
-      scope.getImage();
+      scope.getLeftImage();
       expect(scope.newImageLeft).toEqual('https://thechive.files.wordpress.com/2008/12/funny-hilarious-bird-pics-pictures12.jpg?quality=94&strip=all')
     });
 
-    // it('', function(){
+    it('when clicked it selects a right image', function() {
+      spyOn(Math, "random").and.returnValue(0);
+      scope.getRightImage();
+      expect(scope.newImageRight).toEqual('https://thechive.files.wordpress.com/2008/12/funny-hilarious-bird-pics-pictures12.jpg?quality=94&strip=all')
+    });
 
-    // })
+    it('can choose two images', function(){
+      spyOn(scope, "getLeftImage")
+      spyOn(scope, "getRightImage")
+      scope.getImage();
+      expect(scope.getLeftImage).toHaveBeenCalled()
+      expect(scope.getRightImage).toHaveBeenCalled()
+    });
 
   });
-});
 
+});
