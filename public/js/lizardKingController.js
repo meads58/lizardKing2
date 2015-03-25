@@ -31,12 +31,12 @@ lizardKingApp.controller('LizardKingController', function($scope){
 
   $scope.superLeft = function() {
     $scope.getImage();
-    voteLeft();
+    $scope.voteLeft();
   };
 
    $scope.superRight = function() {
     $scope.getImage();
-    voteRight();
+    $scope.voteRight();
   };
 
   $scope.getImage();
