@@ -1,12 +1,16 @@
 describe('LizardKingController', function() {
- beforeEach(module('LizardKingVote'));
+  beforeEach(module('LizardKingVote'));
 
- var scope, ctrl;
+  var scope, ctrl;
 
- beforeEach(inject(function($rootScope, $controller) {
-   scope = $rootScope.$new();
-   ctrl = $controller('LizardKingController', {
-       $scope: scope
-   });
- }));
+  beforeEach(inject(function($rootScope, $controller) {
+    scope = $rootScope.$new();
+    ctrl = $controller('LizardKingController', {
+      $scope: scope
+    });
+  }));
+
+  describe('changes to random image', function(){
+
+  });
 });
