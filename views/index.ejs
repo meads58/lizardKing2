@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en-US" ng-app>
+<html lang="en-US" ng-app="LizardKing">
 
   <head>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="CSS/styling.css">
+
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+    <script src="js/lizardKingController.js"></script>
+
     <title>Lizard King</title>
   </head>
 
@@ -14,21 +19,22 @@
    big booty biatches!
  </header>
 <body>
+  <div ng-controller="LizardKingController">
    <section class="jumbotron">
      <h1>Lizard King</h1>
      <h2>Choose a picture!</h2>
    </section>
 
    <section class="column">
-     <img class="images_l" src="http://joke-king.com/wp-content/uploads/2014/12/Funny-Cop-Funny-Pictures.jpg">
+     <img class="images_l" ng-src={{newImageLeft}}>
      <br>
-     <button class="button_left">funnier?</button>
+     <button class="funnyButton left" ng-click="getImage()">funnier?</button>
    </section>
 
    <section class="column">
-     <img class="images" src="http://joke-king.com/wp-content/uploads/2014/12/You-Racist-Funny-Pictures.png">
+     <img class="images" ng-src={{newImageRight}}>
      <br>
-     <button class="button">funnier?</button>
+     <button class="funnyButton right" ng-click="getImage()">funnier?</button>
    </section>
 
    <section class="ranking">
@@ -47,6 +53,9 @@
      </tr>
    </table>
    </section>
+  </div>
 
  </body>
 </html>
+
+<!-- "http://joke-king.com/wp-content/uploads/2014/12/Funny-Cop-Funny-Pictures.jpg" -->
