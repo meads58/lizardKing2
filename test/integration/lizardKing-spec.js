@@ -1,12 +1,16 @@
-describe('LizardKingController', function() {
- beforeEach(module('LizardKingVote'));
+describe('lizard King', function(){
 
- var scope, ctrl;
+  beforeEach(function() {
+    browser.get("http://localhost:3000")
+  })
 
- beforeEach(inject(function($rootScope, $controller) {
-   scope = $rootScope.$new();
-   ctrl = $controller('LizardKingController', {
-       $scope: scope
-   });
- }));
-});
+  describe('title', function() {
+
+    it('has the title lizard king.', function() {
+      expect(browser.getTitle()).toEqual("Lizard King")
+    })
+
+  })
+
+
+})
