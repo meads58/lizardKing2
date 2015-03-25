@@ -1,5 +1,5 @@
 describe('lizard King', function() {
-  var lzardVotes =
+
 
   beforeEach(function() {
     browser.get("http://localhost:3000");
@@ -12,6 +12,7 @@ describe('lizard King', function() {
     });
 
     it('should display two pictures', function() {
+
       expect($('.images.left').isPresent()).toBe(true);
       expect($('.images.right').isPresent()).toBe(true);
     });
@@ -30,6 +31,7 @@ describe('lizard King', function() {
       $('.button.left').click();
       expect(link).toNotEqual($('.images.left').getAttribute("src"))
     });
+
 
   });
 
