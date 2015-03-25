@@ -1,13 +1,19 @@
 describe('lizard King', function() {
+  var lzardVotes =
 
   beforeEach(function() {
     browser.get("http://localhost:3000");
   });
 
-  describe('title', function() {
+  describe('landing page', function() {
 
     it('has the title lizard king.', function() {
       expect(browser.getTitle()).toEqual("Lizard King");
+    });
+
+    it('it should update the vote count when voting', function() {
+      element(by.model('[value="button"]')).click();
+      expect(lizardVotes.count()).toEqual(1);
     });
 
 
