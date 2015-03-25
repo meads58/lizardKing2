@@ -11,22 +11,28 @@ describe('lizard King', function() {
       expect(browser.getTitle()).toEqual("Lizard King");
     });
 
-    // it('it should update the vote count when voting', function() {
-    //   element(by.model('[value="button"]')).click();
-    //   expect(lizardVotes.count()).toEqual(1);
-    // });
+    it('should display two pictures', function() {
+      expect($('.images.left').isPresent()).toBe(true);
+      expect($('.images.right').isPresent()).toBe(true);
+    });
+
+    it('should update the vote counter when submitting vote', function() {
+      element(by.className("button")).click();
+      expect()
+    });
 
   });
 
   describe('changes the images', function(){
 
     it('when left funnier? button is clicked', function(){
-      var link = $('.images_l').getAttribute("src");
-      $('.funnyButton.left').click();
-      expect(link).toNotEqual($('.images_l').getAttribute("src"))
+      var link = $('.images.left').getAttribute("src");
+      $('.button.left').click();
+      expect(link).toNotEqual($('.images.left').getAttribute("src"))
     });
 
   });
 
 
 });
+

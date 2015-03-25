@@ -1,7 +1,8 @@
 var lizardKingApp = angular.module('LizardKing', ['ngRoute']);
 
 lizardKingApp.controller('LizardKingController', function($scope){
-
+  $scope.countLeft = 0;
+  $scope.countRight = 0;
 
   $scope.image_bank = [
     "https://thechive.files.wordpress.com/2008/12/funny-hilarious-bird-pics-pictures12.jpg?quality=94&strip=all",
@@ -20,7 +21,27 @@ lizardKingApp.controller('LizardKingController', function($scope){
     $scope.newImageRight =  $scope.image_bank[randomImage()];
   };
 
+  $scope.voteLeft = function() {
+    $scope.countLeft += 1;
+  };
+
+  $scope.voteRight = function() {
+    $scope.countRight += 1;
+  };
+
+  $scope.superLeft = function() {
+    $scope.getImage();
+    voteLeft();
+  };
+
+   $scope.superRight = function() {
+    $scope.getImage();
+    voteRight();
+  };
+
   $scope.getImage();
 
 });
+
+
 
