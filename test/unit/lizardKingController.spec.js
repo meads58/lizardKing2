@@ -10,7 +10,11 @@ describe('LizardKingController', function() {
     });
   }));
 
-  describe('changes to random image', function(){
+  describe('when clicked', function(){
 
+    it('can choose a random image', function(){
+      
+    });
+    
   });
 });
