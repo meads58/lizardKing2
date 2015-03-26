@@ -3,7 +3,8 @@
 
   <head>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bangers&effect=fire-animation' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bangers&effect=neon' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="CSS/styling.css">
 
 
@@ -16,40 +17,57 @@
   </head>
 
  <header>
-   big booty biatches!
+   <button class="header-button"> Rank!.. </button>
+   <button class="header-button"> Top of the List . . </button>
+   <button class="header-button"> Gifs (Cooming soon!) </button>
+   <button class="header-button"> Vines (Cooming soon!) </button>
  </header>
-<body>
-  <div ng-controller="LizardKingController">
-   <section class="jumbotron">
-     <h1>Lizard King</h1>
-     <h2>Choose a picture!</h2>
-   </section>
 
-   <section class="column">
-     <img class="images left" ng-src={{newImageLeft}} ng-click="superLeft()">
-   </section>
+  <body ng-controller="LizardKingController">
+    
+    <section class="row" >
+      <div class="jumbotron module">
+        <h1 class="font-effect-fire-animation">Lizard King</h1>
+        <h2>Just play. Have fun. Enjoy the game</h2>
+      </div>
+    </section>
 
-   <section class="column">
-     <img class="images right" ng-src={{newImageRight}} ng-click="superRight()">
-   </section>
+    <section class="row">
+      <br>
+     <section class="col-md-6">
+       <img class="images left" ng-src={{newImageLeft}} ng-click="superLeft()">
+     </section>
+     
 
-   <section class="ranking">
-   <table style="width: 10%" border="1" class="table">
-     <tr>
-       <td>Image</td>
-       <td>Votes</td>
-     </tr>
-     <tr>
-       <td>cop picture</td>
-       <td class="counter left">{{countLeft}}</td>
-     </tr>
-     <tr>
-       <td>Will Ferrell</td>
-       <td class="counter right">{{countRight}}</td>
-     </tr>
-   </table>
+     <section class="col-md-6">
+       <img class="images right" ng-src={{newImageRight}} ng-click="superRight()">
+     </section>
+
+   <section class="row bottom">
+    <section class="col-md-1 side-left">
+      
+    </section>
+    <section class="col-md-10 middle">
+      <h4 class="font-effect-neon">Lizard's List!</h4>
+    </section>
+    <section class="ranking col-md-1 side-right">
+     <table class="table">
+       <tr>
+         <td>Image</td>
+         <td>Votes</td>
+       </tr>
+       <tr>
+         <td>cop picture</td>
+         <td class="counter left">{{countLeft}}</td>
+       </tr>
+       <tr>
+         <td>Will Ferrell</td>
+         <td class="counter right">{{countRight}}</td>
+       </tr>
+     </table>
+     </section>
    </section>
-  </div>
+   </section>
 
  </body>
 </html>
