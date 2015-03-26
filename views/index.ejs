@@ -16,17 +16,16 @@
     <title>Lizard King</title>
   </head>
 
- <header>
-   <button class="header-button"> Rank!.. </button>
+ <header class="navbar navbar-bright navbar-fixed-top">
+  <a href="#top"><button type="button" class="header-button"> rank! ..</button><a>
    <button class="header-button"> Top of the List . . </button>
    <button class="header-button"> Gifs (Cooming soon!) </button>
    <button class="header-button"> Vines (Cooming soon!) </button>
  </header>
-<body>
 
   <body ng-controller="LizardKingController">
     
-    <section class="row" >
+    <section class="row" id="top">
       <div class="jumbotron module">
         <h1 class="font-effect-fire-animation">Lizard King</h1>
         <h2>Just play. Have fun. Enjoy the game</h2>
@@ -49,7 +48,8 @@
        <td>Image</td>
        <td>Votes</td>
      </tr>
-     <tr ng-repeat="image in image_bank | orderBy : '-count'">
+     <!-- <tr ng-repeat="image in image_bank | orderBy : '-count' | limitTo:3" > -->
+      <tr ng-repeat="image in image_bank | orderBy : '-count'| limitTo:3" ng-if="image.count>0">
        <td class="thumbnail"><img ng-src={{image.url}}></img></td>
        <td>{{ image.count }}</td>
      </tr>
@@ -57,23 +57,20 @@
 
      </section>
 
-   <section class="row bottom">
-    <section class="col-md-1 side-left">
-      
-    </section>
-    <section class="col-md-10 middle">
+   <section class="row bottom");>
+    <!-- <section class="col-md-1 side-left">      
+    </section> -->
+    <section class="col-md-12 middle centering">
       <h4 class="font-effect-neon">Lizard's List!</h4>
-      <table>
-        <tr ng-repeat="image in image_bank">
-         <td><img ng-src={{image.url}}></img></td>
+      <ul ng-repeat="image in image_bank | orderBy : '-count' ">      
+      <li><img class="images" ng-src={{image.url}}></img></li>  
          <!-- <td>{{ image.count }}</td> -->
-       </tr>
-     </table>
+     </ul>
 
     </section>
-    <section class="col-md-1 side-right">
+<!--     <section class="col-md-1 side-right">
      
-   </section>
+   </section> -->
 
 
 
