@@ -56,13 +56,13 @@ lizardKingApp.controller('LizardKingController', function($scope){
   };
 
   $scope.superLeft = function() {
-    $scope.getImage();
     $scope.voteLeft();
+    $scope.getImage();
   };
 
   $scope.superRight = function() {
-    $scope.getImage();
     $scope.voteRight();
+    $scope.getImage();
   };
 
   $scope.getImage();
