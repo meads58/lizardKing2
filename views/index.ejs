@@ -6,12 +6,12 @@
     <link href='http://fonts.googleapis.com/css?family=Bangers&effect=fire-animation' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Bangers&effect=neon' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="CSS/styling.css">
-
-
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+    <script src="js/bank.js"></script>
     <script src="js/lizardKingController.js"></script>
+
 
     <title>Lizard King</title>
   </head>
@@ -22,6 +22,7 @@
    <button class="header-button"> Gifs (Cooming soon!) </button>
    <button class="header-button"> Vines (Cooming soon!) </button>
  </header>
+<body>
 
   <body ng-controller="LizardKingController">
     
@@ -34,13 +35,26 @@
 
     <section class="row">
       <br>
-     <section class="col-md-6">
+     <section class="col-md-5">
        <img class="images left" ng-src={{newImageLeft}} ng-click="superLeft()">
      </section>
      
-
-     <section class="col-md-6">
+     <section class="col-md-5">
        <img class="images right" ng-src={{newImageRight}} ng-click="superRight()">
+     </section>
+
+     <section class="col-md-2">
+      <table style="width: 10%" border="1" class="table">
+     <tr>
+       <td>Image</td>
+       <td>Votes</td>
+     </tr>
+     <tr ng-repeat="image in image_bank | orderBy : '-count'">
+       <td class="thumbnail"><img ng-src={{image.url}}></img></td>
+       <td>{{ image.count }}</td>
+     </tr>
+   </table>
+
      </section>
 
    <section class="row bottom">
@@ -49,26 +63,19 @@
     </section>
     <section class="col-md-10 middle">
       <h4 class="font-effect-neon">Lizard's List!</h4>
-    </section>
-    <section class="ranking col-md-1 side-right">
-     <table class="table">
-       <tr>
-         <td>Image</td>
-         <td>Votes</td>
-       </tr>
-       <tr>
-         <td>cop picture</td>
-         <td class="counter left">{{countLeft}}</td>
-       </tr>
-       <tr>
-         <td>Will Ferrell</td>
-         <td class="counter right">{{countRight}}</td>
+      <table>
+        <tr ng-repeat="image in image_bank">
+         <td><img ng-src={{image.url}}></img></td>
+         <!-- <td>{{ image.count }}</td> -->
        </tr>
      </table>
-     </section>
+
+    </section>
+    <section class="col-md-1 side-right">
+     
    </section>
-   </section>
+
+
 
  </body>
 </html>
-
