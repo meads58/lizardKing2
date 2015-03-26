@@ -72,3 +72,14 @@
      margin: 0 auto;
      display: block;
    }
+
+   .side-column {
+    background-color: black;
+    width: 15%;
+    height: 80%;
+    float: left;
+   }
+
+   .middle {
+    background-color: black;
+   }

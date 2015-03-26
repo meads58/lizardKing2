@@ -29,7 +29,7 @@ describe('lizard King', function() {
 
     it('when left funnier? button is clicked', function(){
       var link = $('.images.left').getAttribute("src");
-      $('.button.left').click();
+      $('.images.left').click();
       waits(2000)
       expect(link).toNotEqual($('.images.left').getAttribute("src"))
     });
