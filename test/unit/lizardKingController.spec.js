@@ -17,13 +17,13 @@ describe('LizardKingController', function() {
       scope.voteLeft();
       scope.voteLeft();
       scope.voteLeft();
-      expect(scope.countLeft).toEqual(3);
+      expect(scope.image_bank[scope.leftIndex].count).toEqual(3);
      });
 
     it('should add a vote to the right pic', function() {
       scope.voteRight();
       scope.voteRight();
-      expect(scope.countRight).toEqual(2);
+      expect(scope.image_bank[scope.rightIndex].count).toEqual(2);
      });
   });
 
