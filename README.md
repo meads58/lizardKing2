@@ -43,4 +43,4 @@ open SpecRunner.html
 Heroku (live)
 -----
 
-[Lizard King](https://radiant-chamber-4814.herokuapp.com/)
+[Lizard King](https://lizard-king.herokuapp.com/)
