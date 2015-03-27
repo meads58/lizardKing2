@@ -50,5 +50,54 @@ var bank = [
  {
    url: "https://i.chzbgr.com/maxW500/7910003712/hF3CC0362/",
    count: 0
+ },
+ {
+   url: "http://i.imgur.com/oIsKpXd.gif",
+   count: 0
+ },
+  {
+   url: "http://ak-hdl.buzzfed.com/static/2014-07/18/8/enhanced/webdr08/anigif_enhanced-buzz-8915-1405685252-4.gif",
+   count: 0
+ },
+  {
+   url:"http://ak-hdl.buzzfed.com/static/2014-07/18/10/enhanced/webdr06/anigif_enhanced-buzz-26187-1405692118-4.gif",
+   count: 0
+ },
+  {
+   url:"http://ak-hdl.buzzfed.com/static/2014-07/18/8/enhanced/webdr10/anigif_enhanced-buzz-31782-1405685704-7.gif",
+   count: 0
+ },
+  {
+   url:"http://ak-hdl.buzzfed.com/static/2014-07/18/8/enhanced/webdr09/anigif_enhanced-buzz-32524-1405685720-4.gif",
+   count: 0
+ },
+  {
+   url:"http://ak-hdl.buzzfed.com/static/2014-07/18/8/enhanced/webdr02/anigif_enhanced-buzz-21072-1405685728-11.gif",
+   count: 0
+ },
+  {
+   url:"http://ak-hdl.buzzfed.com/static/2014-07/18/8/enhanced/webdr02/anigif_enhanced-buzz-21071-1405685749-4.gif",
+   count: 0
+ },
+  {
+   url:"http://ak-hdl.buzzfed.com/static/2014-07/18/10/enhanced/webdr08/anigif_enhanced-buzz-29408-1405693589-7.gif",
+   count: 0
+ },
+  {
+   url:"http://ak-hdl.buzzfed.com/static/2014-07/18/10/enhanced/webdr05/anigif_enhanced-8900-1405693962-8.gif",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/8364778240/hC22E485B/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/8386793728/h119324CA/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/8382227968/h81BDA03D/",
+   count: 0
  }
+
 ];

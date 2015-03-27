@@ -17,14 +17,14 @@
   </head>
 
  <header class="navbar navbar-bright navbar-fixed-top">
-  <a href="#top"><button type="button" class="header-button"> rank! ..</button><a>
+  <a href="#top"><button type="button" class="header-button"> rank! ..</button></a>
    <button class="header-button"> Top of the List . . </button>
    <button class="header-button"> Gifs (Cooming soon!) </button>
    <button class="header-button"> Vines (Cooming soon!) </button>
  </header>
 
   <body ng-controller="LizardKingController">
-    
+
     <section class="row" id="top">
       <div class="jumbotron module">
         <h1 class="font-effect-fire-animation">Lizard King</h1>
@@ -37,7 +37,7 @@
      <section class="col-md-5">
        <img class="images left" ng-src={{newImageLeft}} ng-click="superLeft()">
      </section>
-     
+
      <section class="col-md-5">
        <img class="images right" ng-src={{newImageRight}} ng-click="superRight()">
      </section>
@@ -58,18 +58,18 @@
      </section>
 
    <section class="row bottom");>
-    <!-- <section class="col-md-1 side-left">      
+    <!-- <section class="col-md-1 side-left">
     </section> -->
     <section class="col-md-12 middle centering">
       <h4 class="font-effect-neon">Lizard's List!</h4>
-      <ul ng-repeat="image in image_bank | orderBy : '-count' ">      
-      <li><img class="images" ng-src={{image.url}}></img></li>  
+      <ul ng-repeat="image in image_bank | orderBy : '-count' ">
+      <li><img class="images" ng-src={{image.url}}></img></li>
          <!-- <td>{{ image.count }}</td> -->
      </ul>
 
     </section>
 <!--     <section class="col-md-1 side-right">
-     
+
    </section> -->
 
 
