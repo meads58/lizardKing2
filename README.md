@@ -38,7 +38,7 @@ How to run tests
 ----
 ```sh
 cd lizard-king
-open SpecRunner.html
+open karma start
 ```
 Heroku (live)
 -----
