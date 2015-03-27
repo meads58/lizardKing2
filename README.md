@@ -1,4 +1,4 @@
-Lizard King
+Lizard King [![Code Climate](https://codeclimate.com/github/kevinlanzon/lizard-king/badges/gpa.svg)](https://codeclimate.com/github/kevinlanzon/lizard-king)
 ==========
 
 Makerthon!
