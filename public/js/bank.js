@@ -4,15 +4,7 @@ var bank = [
    count: 0
  },
  {
-   url: "http://cdn.funnyhub.com/2015/feb/bas/Funny-Pictures/funny-middle-finger-old-lady.gif",
-   count: 0
- },
- {
    url: "http://r.fod4.com/http://p.fod4.com/p/media/c81a6839b7/NSaD49Y5TVC5VSdXiGiM_f1.jpg",
-   count: 0
- },
- {
-   url: "http://quicklol.com/wp-content/uploads/2015/03/xmen-toilet.jpg",
    count: 0
  },
  {
@@ -41,10 +33,6 @@ var bank = [
  },
  {
    url: "https://i.chzbgr.com/maxW500/7960523008/h11171374/",
-   count: 0
- },
- {
-   url: "http://quicklol.com/wp-content/uploads/2013/08/a-good-book.jpg",
    count: 0
  },
  {
@@ -87,17 +75,140 @@ var bank = [
    url:"http://ak-hdl.buzzfed.com/static/2014-07/18/10/enhanced/webdr05/anigif_enhanced-8900-1405693962-8.gif",
    count: 0
  },
-  {
+ {
    url:"https://i.chzbgr.com/maxW500/8364778240/hC22E485B/",
    count: 0
  },
+ {
+   url:"https://i.chzbgr.com/maxW500/7924569856/hC65A03E1/",
+   count: 0
+ },
+ {
+   url:"https://i.chzbgr.com/maxW500/8382227968/h81BDA03D/",
+   count: 0
+ },
   {
-   url:"https://i.chzbgr.com/maxW500/8386793728/h119324CA/",
+   url:"https://i.chzbgr.com/maxW500/7899463168/hC4D16E80/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7892614656/hF19E35C9/",
    count: 0
  },
   {
    url:"https://i.chzbgr.com/maxW500/8382227968/h81BDA03D/",
    count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7859837184/h6E522421/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7854838784/hBF7C79AB/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7832001792/h687BA1CE/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7777306624/hB3BD2DB5/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7769558272/h0E0E0956/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7740959744/h6D345422/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7752243200/h7FB53A9C/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7724632320/h0474A9FD/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7728327680/hD05FD649/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7720575232/h9F2BAD83/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7704411136/hE8024A04/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7646162176/hBD655E3A/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7538394880/h54340905/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7515537920/h556E5C79/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7471422976/hC945D1E3/",
+   count: 0
+ },
+  {
+   url:"https://i.chzbgr.com/maxW500/7387848960/h19E55889/",
+   count: 0
  }
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ];
