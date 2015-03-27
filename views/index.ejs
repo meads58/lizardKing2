@@ -4,7 +4,9 @@
   <head>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Bangers&effect=fire-animation' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Bangers&effect=neon' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bangers&effect=anaglyph' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bangers&effect=ice' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bangers&effect=fire' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="CSS/styling.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
@@ -17,18 +19,16 @@
   </head>
 
  <header class="navbar navbar-bright navbar-fixed-top">
-  <a href="#top"><button type="button" class="header-button"> rank! ..</button><a>
-   <button class="header-button"> Top of the List . . </button>
-   <button class="header-button"> Gifs (Cooming soon!) </button>
-   <button class="header-button"> Vines (Cooming soon!) </button>
+  <a href="#top"><button type="button" class="action-button shadow animate blue"> rank! ..</button></a>
+  <a href="#bottom"><button type="button" class="action-button shadow animate yellow"> top of the list! ..</button></a>
  </header>
 
   <body ng-controller="LizardKingController">
     
     <section class="row" id="top">
       <div class="jumbotron module">
-        <h1 class="font-effect-fire-animation">Lizard King</h1>
-        <h2>Just play. Have fun. Enjoy the game</h2>
+        <h1 id="header-one" class="font-effect-fire-animation">Lizard King</h1>
+        <h2 id="header-two" class="font-effect-fire">    </h2>
       </div>
     </section>
 
@@ -45,8 +45,8 @@
      <section class="col-md-2">
       <table style="width: 10%" border="1" class="table">
      <tr>
-       <td>Image</td>
-       <td>Votes</td>
+       <td class="font-effect-anaglyph">Image</td>
+       <td class="font-effect-anaglyph">Votes</td>
      </tr>
      <!-- <tr ng-repeat="image in image_bank | orderBy : '-count' | limitTo:3" > -->
       <tr ng-repeat="image in image_bank | orderBy : '-count'| limitTo:3" ng-if="image.count>0">
@@ -54,16 +54,18 @@
        <td>{{ image.count }}</td>
      </tr>
    </table>
+   <br>
+   <br>
 
      </section>
 
    <section class="row bottom");>
-    <!-- <section class="col-md-1 side-left">      
+<!--     <section class="col-md-1 side-left">      
     </section> -->
-    <section class="col-md-12 middle centering">
-      <h4 class="font-effect-neon">Lizard's List!</h4>
+    <section id="background-bottom" class="col-md-12 middle centering">
+      <h4 class="font-effect-ice" id="bottom">The Lizard's List!</h4>
       <ul ng-repeat="image in image_bank | orderBy : '-count' ">      
-      <li><img class="images" ng-src={{image.url}}></img></li>  
+      <li><img class="images-bottom" ng-src={{image.url}}></img></li>  
          <!-- <td>{{ image.count }}</td> -->
      </ul>
 
@@ -71,8 +73,6 @@
 <!--     <section class="col-md-1 side-right">
      
    </section> -->
-
-
 
  </body>
 </html>
