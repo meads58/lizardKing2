@@ -38,7 +38,7 @@ How to run tests
 ----
 ```sh
 cd lizard-king
-open karma start
+run karma start
 ```
 Heroku (live)
 -----
