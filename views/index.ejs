@@ -24,11 +24,11 @@
  </header>
 
   <body ng-controller="LizardKingController">
-    
+
     <section class="row" id="top">
       <div class="jumbotron module">
         <h1 id="header-one" class="font-effect-fire-animation">Lizard King</h1>
-        <h2 id="header-two" class="font-effect-fire">    </h2>
+        <h2 id="header-two" class="font-effect-anaglyph"> more addictive than a crack habit </h2>
       </div>
     </section>
 
@@ -37,7 +37,7 @@
      <section class="col-md-5">
        <img class="images left" ng-src={{newImageLeft}} ng-click="superLeft()">
      </section>
-     
+
      <section class="col-md-5">
        <img class="images right" ng-src={{newImageRight}} ng-click="superRight()">
      </section>
@@ -60,19 +60,12 @@
      </section>
 
    <section class="row bottom");>
-<!--     <section class="col-md-1 side-left">      
-    </section> -->
+
     <section id="background-bottom" class="col-md-12 middle centering">
       <h4 class="font-effect-ice" id="bottom">The Lizard's List!</h4>
       <ul ng-repeat="image in image_bank | orderBy : '-count' ">      
       <li><img class="images-bottom" ng-src={{image.url}}></img></li>  
-         <!-- <td>{{ image.count }}</td> -->
-     </ul>
 
-    </section>
-<!--     <section class="col-md-1 side-right">
-     
-   </section> -->
 
  </body>
 </html>
