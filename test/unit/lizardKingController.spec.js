@@ -10,7 +10,6 @@ describe('LizardKingController', function() {
     });
   }));
 
-
   describe('landing page', function() {
 
     it('should add a vote to the left pic', function() {

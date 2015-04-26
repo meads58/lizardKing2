@@ -1,7 +1,7 @@
 Lizard King [![Code Climate](https://codeclimate.com/github/kevinlanzon/lizard-king/badges/gpa.svg)](https://codeclimate.com/github/kevinlanzon/lizard-king)
 ==========
 
-Makerthon!
+Makerthon project to aid in the search for the funniest gif/image around.
 
 Requirements
 ----
@@ -21,8 +21,8 @@ Technologies used
 - AngularJS
 - NodeJS
 - Express with EJS templates
-- Karma
-- Protractor
+- Karma(Unit testing)
+- Protractor(Integration testing)
 - HTML
 - CSS
 - Git
@@ -40,7 +40,16 @@ How to run tests
 cd lizard-king
 run karma start
 ```
+
+Future Features
+-----
+- Add a persistence layer for the results with a database
+- Google scraper extension to build the gif list
+- Implement the Elo algorithm for scoring wins and losses.
+
 Heroku (live)
 -----
 
-[Lizard King](https://lizard-king.herokuapp.com/)
+Team Members
+----
+Meads, Kevin, Ed and Diago
